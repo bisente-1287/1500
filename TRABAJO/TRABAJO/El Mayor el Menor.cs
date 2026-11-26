@@ -1,32 +1,86 @@
-﻿/*
- * Created by SharpDevelop.
- * User: CC2_PC13
- * Date: 25/11/2026
- * Time: 08:20 a. m.
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
-using System;
-using System.Drawing;
+﻿using System;
 using System.Windows.Forms;
 
 namespace TRABAJO
 {
-	/// <summary>
-	/// Description of El_Mayor_el_Menor.
-	/// </summary>
-	public partial class Mayor : Form
-	{
-		public Mayor()
+    public partial class Mayor : Form
+    {
+        double[] numeros = new double[100];
+        int contador = 0;
+
+        public Mayor()
+        {
+            InitializeComponent();
+        }
+
+        private void BtnAgregarClick(object sender, EventArgs e)
+        {
+            if (contador >= numeros.Length)
+            {
+                MessageBox.Show("Se alcanzó el límite máximo de 100 números.", "Límite alcanzado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            double numeroIngresado;
+            if (double.TryParse(txtNumero.Text, out numeroIngresado))
+            {
+                numeros[contador] = numeroIngresado;
+                contador++;
+                txtNumero.Text = "";
+                txtNumero.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingresa un número válido.", "Tamalito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNumero.SelectAll();
+                txtNumero.Focus();
+            }
+        }
+
+        private void BtnCalcularClick(object sender, EventArgs e)
+        {
+            if (contador == 0)
+            {
+                MessageBox.Show("Agrega al menos un número primero.", "Error404XD", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtNumero.Focus();
+                return;
+            }
+
+            double mayor = numeros[0];
+            double menor = numeros[0];
+
+            for (int i = 1; i < contador; i++)
+            {
+                if (numeros[i] > mayor)
+                {
+                    mayor = numeros[i];
+                }
+
+                if (numeros[i] < menor)
+                {
+                    menor = numeros[i];
+                }
+            }
+
+            lblRespuesta.Text = "mayor = " + mayor;
+            lblResultado.Text = "menor = " + menor;
+        }
+		
+		void Label4Click(object sender, EventArgs e)
 		{
-			//
-			// The InitializeComponent() call is required for Windows Forms designer support.
-			//
-			InitializeComponent();
 			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
 		}
-	}
+		
+		void SalirToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+		
+		void RegresarToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			frmMenu mmm = new frmMenu();
+			mmm.Show();
+			this.Hide();
+		}
+    }
 }
