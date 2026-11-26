@@ -28,5 +28,25 @@ namespace TRABAJO
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void BtncambiarClick(object sender, EventArgs e)
+		{
+			string palabra="", invertida="";
+			palabra=txtpalabra.Text;
+			int l=palabra.Length;
+			for(int i=l-1; i>=0; i--)
+			{
+				invertida=invertida+ palabra.Substring(i, 1);
+			}
+			lblnormal.Text=palabra;
+			lblrevez.Text=invertida;
+		}
+		
+		void BtnregresaClick(object sender, EventArgs e)
+		{
+			frmMenu mmm = new frmMenu();
+			mmm.Show();
+			this.Hide();
+		}
 	}
 }
