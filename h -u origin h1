@@ -1,0 +1,32 @@
+[33mcommit 2ce1a76420f6d8baadde7078444ab0c432265ec7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mh1[m[33m)[m
+Author: ComandantePistola <brandon.carapiah.prg36825@cbtis217.edu.mx>
+Date:   Thu Nov 26 17:41:32 2026 -0600
+
+    Agrego programa El Mayor y el Menor
+
+[33mcommit 5375758dff0a852f0d7f18ded35fd87fa64483d0[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 5ef1f7a 9700000
+Author: kevinalvarezzprg36225-rgb <kevin.alvarezz.prg36225@cbtis217.edu.mx>
+Date:   Thu Nov 26 07:37:42 2026 -0600
+
+    Merge pull request #1 from bisente-1287/c1
+    
+    palabra al revez
+
+[33mcommit 9700000a74cf41c02fbf6e2937692672d7cc60a6[m[33m ([m[1;31morigin/c1[m[33m)[m
+Author: kevinalvarezzprg36225 <kevin.alvarezz.prg36225@cbtis217.edu.mx>
+Date:   Thu Nov 26 07:36:30 2026 -0600
+
+    palabra al revez
+
+[33mcommit 5ef1f7abfbde8b7e96c2f0a569ad74f946bb88c5[m
+Author: Andryw <andryw.cornejon.prg36925@cbtis217.edu.mx>
+Date:   Wed Nov 25 08:28:33 2026 -0600
+
+    se agrego el login y el menu principal y sus funciones
+
+[33mcommit 3ce2f4c874876dd8fe2b7a283c529d215119ff9f[m
+Author: bisente-1287 <andryw.cornejon.prg36925@cbtis217.edu.mx>
+Date:   Wed Nov 25 07:42:58 2026 -0600
+
+    Initial commit

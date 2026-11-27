@@ -96,7 +96,7 @@ namespace TRABAJO
 			// 
 			this.lblResultado.BackColor = System.Drawing.Color.Transparent;
 			this.lblResultado.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblResultado.ForeColor = System.Drawing.Color.White;
+			this.lblResultado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
 			this.lblResultado.Location = new System.Drawing.Point(79, 284);
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(100, 23);
@@ -106,7 +106,7 @@ namespace TRABAJO
 			// 
 			this.lblRespuesta.BackColor = System.Drawing.Color.Transparent;
 			this.lblRespuesta.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblRespuesta.ForeColor = System.Drawing.Color.White;
+			this.lblRespuesta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
 			this.lblRespuesta.Location = new System.Drawing.Point(79, 241);
 			this.lblRespuesta.Name = "lblRespuesta";
 			this.lblRespuesta.Size = new System.Drawing.Size(100, 23);
@@ -116,7 +116,7 @@ namespace TRABAJO
 			// 
 			this.label1.BackColor = System.Drawing.Color.Transparent;
 			this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.Color.White;
+			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
 			this.label1.Location = new System.Drawing.Point(13, 241);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(100, 23);
@@ -127,7 +127,7 @@ namespace TRABAJO
 			// 
 			this.label2.BackColor = System.Drawing.Color.Transparent;
 			this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.Color.White;
+			this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
 			this.label2.Location = new System.Drawing.Point(13, 284);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(100, 23);
@@ -168,14 +168,14 @@ namespace TRABAJO
 			// salirToolStripMenuItem
 			// 
 			this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-			this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.salirToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
 			this.salirToolStripMenuItem.Text = "Salir";
 			this.salirToolStripMenuItem.Click += new System.EventHandler(this.SalirToolStripMenuItemClick);
 			// 
 			// regresarToolStripMenuItem
 			// 
 			this.regresarToolStripMenuItem.Name = "regresarToolStripMenuItem";
-			this.regresarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.regresarToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
 			this.regresarToolStripMenuItem.Text = "regresar";
 			this.regresarToolStripMenuItem.Click += new System.EventHandler(this.RegresarToolStripMenuItemClick);
 			// 
