@@ -28,5 +28,34 @@ namespace TRABAJO
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			string palabra = textBox1.Text.ToLower();
+			
+			int vocales = 0;
+			int consonantes = 0;
+			string listaVocales = "aeiouáéíóúü";
+			
+			foreach (char letra in palabra)
+			{
+				// Verificamos que el carácter sea una letra (ignora números, espacios o símbolos)
+				if (char.IsLetter(letra))
+				{
+					if (listaVocales.Contains(letra.ToString()))
+					{
+						vocales++;
+					}
+					else
+					{
+						consonantes++;
+					}
+				}
+			}
+			
+			// Mostramos los resultados en las etiquetas
+			label1.Text = "Vocales: " + vocales;
+			label2.Text = "Consonantes: " + consonantes;
+		}
 	}
 }
